@@ -19,7 +19,7 @@ body{background:#0a0a0a;color:#fafafa;font-family:Inter,system-ui,sans-serif}
 .hamburger.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
 
 /* ── MOBILE MENU ── */
-.mobile-menu{display:none;position:fixed;top:76px;left:0;right:0;bottom:0;background:rgba(10,10,10,.97);backdrop-filter:blur(20px);flex-direction:column;align-items:center;justify-content:center;gap:35px;z-index:19;opacity:0;pointer-events:none;transition:opacity .3s ease}
+.mobile-menu{display:none;position:fixed;top:76px;left:0;right:0;bottom:0;background:rgba(10,10,10,.97);backdrop-filter:blur(20px);flex-direction:column;align-items:center;justify-content:flex-start;gap:35px;padding-top:max(90px,20vh);z-index:19;opacity:0;pointer-events:none;transition:opacity .3s ease;overflow-y:auto}
 .mobile-menu.active{opacity:1;pointer-events:all}
 .mobile-menu a{font:500 14px "DM Mono",monospace;text-transform:uppercase;letter-spacing:.1em;color:#d4d4d8;text-decoration:none;transition:color .25s}
 .mobile-menu a:hover{color:#3b82f6}
