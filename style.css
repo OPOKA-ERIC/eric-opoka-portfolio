@@ -19,10 +19,12 @@ body{background:#0a0a0a;color:#fafafa;font-family:Inter,system-ui,sans-serif}
 .hamburger.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
 
 /* ── MOBILE MENU ── */
-.mobile-menu{display:none;position:fixed;top:76px;left:0;right:0;bottom:0;background:rgba(10,10,10,.97);backdrop-filter:blur(20px);flex-direction:column;align-items:center;justify-content:flex-start;gap:35px;padding-top:max(90px,20vh);z-index:19;opacity:0;pointer-events:none;transition:opacity .3s ease;overflow-y:auto}
+.mobile-menu{display:none;position:fixed;top:76px;left:0;right:0;bottom:0;background:#0a0a0a;flex-direction:column;align-items:center;justify-content:flex-start;gap:30px;padding-top:max(90px,20vh);z-index:19;opacity:0;pointer-events:none;transition:opacity .3s ease;overflow-y:auto}
 .mobile-menu.active{display:flex;opacity:1;pointer-events:all}
-.mobile-menu a{font:500 14px "DM Mono",monospace;text-transform:uppercase;letter-spacing:.1em;color:#d4d4d8;text-decoration:none;transition:color .25s}
+.mobile-menu a{font:600 18px "DM Mono",monospace;text-transform:uppercase;letter-spacing:.1em;color:#fafafa;text-decoration:none;padding:6px 10px;transition:color .25s}
 .mobile-menu a:hover{color:#3b82f6}
+.mobile-menu .mobile-cta{border:1px solid #3b82f6;color:#fff;margin-top:15px}
+.mobile-menu .mobile-cta:hover{background:#3b82f6}
 
 /* ── SECTION ── */
 .section{padding:120px 8vw;max-width:1500px;margin:auto}
