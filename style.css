@@ -3,7 +3,7 @@ html{scroll-behavior:smooth}
 body{background:#0a0a0a;color:#fafafa;font-family:Inter,system-ui,sans-serif}
 
 /* ── NAV ── */
-.nav{height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 5vw;border-bottom:1px solid #262626;position:sticky;top:0;background:rgba(10,10,10,.85);backdrop-filter:blur(16px);z-index:20}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 5vw;border-bottom:1px solid #262626;position:sticky;top:0;background:#0a0a0a;z-index:10000}
 .brand{font-size:25px;font-weight:800;color:#fafafa;text-decoration:none}
 .brand span{color:#3b82f6}
 .nav-links{display:flex;gap:30px}
@@ -19,7 +19,7 @@ body{background:#0a0a0a;color:#fafafa;font-family:Inter,system-ui,sans-serif}
 .hamburger.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
 
 /* ── MOBILE MENU ── */
-.mobile-menu{display:none;position:fixed;top:76px;left:0;right:0;bottom:0;background:#0a0a0a;flex-direction:column;align-items:center;justify-content:flex-start;gap:30px;padding-top:max(90px,20vh);z-index:19;opacity:0;pointer-events:none;transition:opacity .3s ease;overflow-y:auto}
+.mobile-menu{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:#0a0a0a;flex-direction:column;align-items:center;justify-content:flex-start;gap:30px;padding-top:max(110px,22vh);z-index:9999;opacity:0;pointer-events:none;transition:opacity .25s ease;overflow-y:auto}
 .mobile-menu.active{display:flex;opacity:1;pointer-events:all}
 .mobile-menu a{font:600 18px "DM Mono",monospace;text-transform:uppercase;letter-spacing:.1em;color:#fafafa;text-decoration:none;padding:6px 10px;transition:color .25s}
 .mobile-menu a:hover{color:#3b82f6}
@@ -113,7 +113,6 @@ footer{border-top:1px solid #262626;padding:25px 8vw;display:flex;justify-conten
 @media(max-width:850px){
   .nav-links,.nav-cta{display:none}
   .hamburger{display:block}
-  .mobile-menu{display:flex}
   .hero{grid-template-columns:1fr;min-height:auto;padding-top:90px}
   .hero-photo{width:320px;height:320px;margin:0 auto}
   .section{padding:80px 6vw}
